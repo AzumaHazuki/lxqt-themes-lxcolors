@@ -302,7 +302,7 @@ LXQtFancyMenuWindow {
 }
 
 /* Sliders */
-LXQtPanel QSlider {
+#Backlight QSlider, VolumePopup QSlider {
     color: #212121;
     background: transparent;
     min-width: 24px;
@@ -310,7 +310,7 @@ LXQtPanel QSlider {
     margin: 8px 0px;
 }
 
-LXQtPanel QSlider::handle {
+#Backlight QSlider::handle, VolumePopup QSlider::handle {
     color: transparent;
     background: transparent;
     border: 2px solid transparent;
@@ -319,18 +319,18 @@ LXQtPanel QSlider::handle {
     margin: -7px;
 }
 
-LXQtPanel QSlider::handle:hover,
-LXQtPanel QSlider::handle:pressed {
+#Backlight QSlider::handle:hover, VolumePopup QSlider::handle:hover,
+#Backlight QSlider::handle:pressed, VolumePopup QSlider::handle:pressed {
     border-image: url(assets/scrollbars/slider-active.png);
 }
 
-LXQtPanel QSlider::groove {
+#Backlight QSlider::groove, VolumePopup QSlider::groove {
     border: 3px solid transparent;
     border-image: url(assets/scrollbars/groove.png);
     width: 1px;
 }
 
-LXQtPanel QSlider::sub-page {
+#Backlight QSlider::sub-page, VolumePopup QSlider::sub-page {
     border: 2px solid transparent;
     border-image: url(assets/scrollbars/subpage.png);
     width: 1px;
